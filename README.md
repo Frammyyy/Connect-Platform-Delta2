@@ -6,7 +6,7 @@
 * **Paulina Marquez** - PaulinaM05
 * **Michael Juengling** - XXLCharmander
 * **Kat Frederick** - [Your GitHub Username]
-* **William Holden** - [Your GitHub Username]
+* **William Holden** - wsalazar657-boop
 
 ---
 
@@ -34,7 +34,7 @@ Brief description of the Connect platform and what this project implements. (Ref
 
 ## Individual Contributions
 ### Nasif Hyder
-* Created the repository structure and initial GitHub processes (Milestone 1).
+* Created the repository structure and initial GitHub processes and header of index/landing page (Milestone 1).
 * [List other specific contributions for Milestone 2, e.g., Implemented student dashboard HTML layout]
 * [List other specific contributions for Milestone 3, e.g., Styled the projects listing page with CSS Grid]
 
