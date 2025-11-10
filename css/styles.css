@@ -55,20 +55,21 @@
 */
 
 :root {
-    /* PRIMARY COLORS - Main brand colors used throughout the site */
-    --primary-color: #2563eb;      /* Blue - Used for main actions, links, emphasis */
-    --secondary-color: #7c3aed;    /* Purple - Used for secondary actions, accents */
-    
-    /* TEXT COLORS - For readability and hierarchy */
-    --text-dark: #1f2937;          /* Dark gray - Main body text, headings */
-    --text-light: #6b7280;         /* Medium gray - Secondary text, descriptions */
-    
-    /* BACKGROUND COLORS - For page sections and containers */
-    --background: #ffffff;         /* White - Main page background */
-    --background-alt: #f9fafb;     /* Light gray - Alternate sections, cards */
-    
+    /* PRIMARY COLORS */
+    --primary-color: #4A2E2A;        /* Dark Brown (almost black) */
+    --secondary-color: #C8A98E;      /* Light Brown / Skin tone */
+
+    /* TEXT COLORS */
+    --text-dark: #2B1E1A;            /* Dark Brown (readable) */
+    --text-light: #7A6458;           /* Medium Brown */
+
+    /* BACKGROUND COLORS */
+    --background: #F7EFE7;           /* Very light skin-tone beige */
+    --background-alt: #F2E6DA;       /* Slightly darker beige (cards/sections) */
+
+
     /* BORDER AND DIVIDER COLORS */
-    --border-color: #e5e7eb;       /* Light gray - Borders, dividers, outlines */
+    --border-color: #D8C7B8;         /* Light beige-brown */
     
     /* STATUS COLORS - For feedback and states */
     --success-color: #10b981;      /* Green - Success messages, completed items */
@@ -101,6 +102,9 @@
 }
 
 /* TODO: Customize Your Color Scheme
+
+   -Nasif Hyder : Changed color scheme to match our brownish design
+
    Replace the color values above to match your team's Figma design.
    
    HINT: Use a color picker tool to get exact hex codes from your Figma prototype
@@ -951,7 +955,7 @@ button {
 .step {
     text-align: center;
     padding: 2rem;
-    background-color: var(--background);
+    background-color: var(--background-alt);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     
