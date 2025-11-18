@@ -1,20 +1,7 @@
 /* ==========================================
    CONNECT PLATFORM - COMPLETE STYLESHEET
    ENGR 1340 - Project 2
-   
-   This stylesheet contains ALL styles for the Connect Platform website.
-   It includes styles for 4 pages:
-   1. Landing Page (index.html)
-   2. Student Dashboard (student-dashboard.html)
-   3. Company Dashboard (company-dashboard.html)
-   4. Project Listings (projects.html)
-   
-   HOW TO USE THIS FILE:
-   - Read the comments to understand what each style does
-   - Look for TODO comments to see where you need to customize
-   - Follow the HINT comments for syntax guidance
-   - Use the EXAMPLE comments to see how properties work
-   
+
    CSS ORGANIZATION:
    1. CSS Variables (Color Scheme)
    2. Base Styles & Reset
@@ -32,26 +19,8 @@
    ========================================== */
 
 /* ==========================================
-   1. CSS VARIABLES (COLOR SCHEME)
-   ========================================== 
-   
-   WHAT ARE CSS VARIABLES?
-   CSS Variables (also called Custom Properties) let you store values
-   that you can reuse throughout your stylesheet. Instead of typing
-   the same color code multiple times, you define it once and reference it.
-   
-   WHY USE THEM?
-   - Easy to maintain (change color in one place, updates everywhere)
-   - Consistent design (same colors used throughout)
-   - Professional practice (industry standard)
-   
-   HOW TO USE:
-   Define: --variable-name: value;
-   Use: property: var(--variable-name);
-   
-   EXAMPLE:
-   Define: --primary-color: #2563eb;
-   Use: background-color: var(--primary-color);
+   1. CSS Variables (Color Scheme)
+   ==========================================
 */
 
 :root {
@@ -105,44 +74,13 @@
 
    -Nasif Hyder : Changed color scheme to match our brownish design
 
-   Replace the color values above to match your team's Figma design.
-   
-   HINT: Use a color picker tool to get exact hex codes from your Figma prototype
-   
-   TIPS:
-   - Keep contrast high for accessibility (text should be readable)
-   - Use your primary color for important actions (buttons, links)
-   - Use secondary color sparingly for accents
-   - Test your colors on different screens
-   
-   EXAMPLE: If your design uses orange as the primary color:
-   --primary-color: #f97316;
 */
 
 /* ==========================================
    2. BASE STYLES & RESET
    ========================================== 
-   
-   WHAT IS A CSS RESET?
-   Different browsers have different default styles for HTML elements.
-   A CSS reset removes these inconsistencies so your site looks the
-   same across all browsers.
-   
-   WHY DO WE NEED IT?
-   Without a reset:
-   - Margins and padding vary between browsers
-   - Fonts sizes differ
-   - Elements look inconsistent
-   
-   This section "resets" all elements to a consistent starting point.
 */
 
-/* UNIVERSAL SELECTOR (*)
-   Applies to EVERY element on the page
-   The box-sizing property controls how width/height are calculated
-   - border-box: width includes padding and border (easier to work with)
-   - content-box: width is just the content (default, harder to calculate)
-*/
 * {
     margin: 0;              /* Remove default margins from all elements */
     padding: 0;             /* Remove default padding from all elements */
