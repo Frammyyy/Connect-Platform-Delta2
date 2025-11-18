@@ -71,9 +71,7 @@
 }
 
 /* TODO: Customize Your Color Scheme
-
    -Nasif Hyder : Changed color scheme to match our brownish design
-
 */
 
 /* ==========================================
@@ -87,35 +85,19 @@
     box-sizing: border-box; /* Include padding and border in element's total width/height */
 }
 
-/* BODY ELEMENT
-   The body is the main container for all visible content
-   These styles affect the entire page
-*/
 body {
-    /* FONT FAMILY
-       The browser tries each font in order until it finds one installed
-       This is called a "font stack" */
+
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    /* Explanation: 
-       -apple-system = Apple's system font (Mac/iOS)
-       BlinkMacSystemFont = Chrome on Mac
-       'Segoe UI' = Windows system font
-       Roboto = Android system font
-       Fallbacks: Helvetica Neue, Arial, generic sans-serif
-    */
-    
     font-size: 16px;        /* Base font size (1rem = 16px) */
     line-height: 1.6;       /* Space between lines (1.6 = 160% of font size) */
     color: var(--text-dark);           /* Default text color */
     background-color: var(--background); /* Default page background */
-    
-    /* PREVENT HORIZONTAL SCROLL
-       Sometimes content can cause horizontal scrolling, this prevents it */
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+
 }
 
-/* HEADING ELEMENTS
-   Ensure headings have consistent styling */
+/* HEADING ELEMENTS */
+
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;       /* Tighter line height for headings (looks better) */
     font-weight: 700;       /* Bold weight (700 = bold, 400 = normal) */
@@ -127,60 +109,46 @@ p {
     margin-bottom: 1rem;    /* Space after paragraphs */
 }
 
-/* IMAGE ELEMENTS
-   Make all images responsive by default */
+/* IMAGE ELEMENTS */
+
 img {
     max-width: 100%;        /* Image will never be wider than its container */
     height: auto;           /* Height scales proportionally with width */
     display: block;         /* Remove extra space below images (default is inline) */
 }
 
-/* LIST ELEMENTS
-   Remove default bullet points and numbering */
+/* LIST ELEMENTS */
+
 ul, ol {
     list-style: none;       /* Remove bullets/numbers */
 }
 
-/* LINK ELEMENTS
-   Remove default link styling */
+/* LINK ELEMENTS */
+
 a {
     text-decoration: none;  /* Remove underline */
     color: inherit;         /* Use the same color as parent element */
     transition: color var(--transition-normal) ease; /* Smooth color change on hover */
 }
 
-/* BUTTON ELEMENTS
-   Inherit font from parent (buttons have different default fonts) */
+/* BUTTON ELEMENTS */
+
 button {
     font-family: inherit;   /* Use same font as body */
     cursor: pointer;        /* Show pointer cursor on hover */
 }
 
 /* TODO: Adjust Base Font Size
-   If your design requires larger or smaller text, change the font-size
-   on the body element. This will affect all rem units throughout the site.
-   
-   HINT: 1rem = whatever you set body font-size to
-   EXAMPLE: If you set body font-size: 18px, then 2rem = 36px
+   Nasif Hyder - I think we are good with the defaults for now
 */
 
 /* ==========================================
    3. LAYOUT UTILITIES
-   ========================================== 
-   
-   WHAT ARE UTILITY CLASSES?
-   Utility classes are reusable styles that you can apply to any element.
-   Instead of writing the same CSS multiple times, create a utility class.
-   
-   EXAMPLE:
-   Instead of: div { max-width: 1200px; margin: 0 auto; }
-   Use: <div class="container">
+   ==========================================
 */
 
-/* CONTAINER CLASS
-   Centers content and constrains maximum width
-   Used on every page to keep content from stretching too wide on large screens
-*/
+/* CONTAINER CLASS*/
+
 .container {
     max-width: 1200px;      /* Content never wider than 1200px */
     margin: 0 auto;         /* Center horizontally (0 top/bottom, auto left/right) */
@@ -188,25 +156,26 @@ button {
     width: 100%;            /* Take full width up to max-width */
 }
 
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.hide { display: none; }
+.show { display: block; }
+
+.mt-1 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 1rem; }
+
+.flex { display: flex; }
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* TODO: Add More Utility Classes
-   Common utility classes you might need:
-   
-   HINT: Text alignment utilities
-   .text-center { text-align: center; }
-   .text-left { text-align: left; }
-   .text-right { text-align: right; }
-   
-   HINT: Display utilities
-   .hide { display: none; }
-   .show { display: block; }
-   
-   HINT: Margin utilities
-   .mt-1 { margin-top: 1rem; }
-   .mb-1 { margin-bottom: 1rem; }
-   
-   HINT: Flex utilities
-   .flex { display: flex; }
-   .flex-center { display: flex; justify-content: center; align-items: center; }
+   Nasif Hyder - added some common utility classes
 */
 
 /* SECTION SPACING
@@ -217,62 +186,39 @@ button {
 
 /* ==========================================
    4. NAVIGATION BAR
-   ========================================== 
-   
-   WHAT IS A NAVIGATION BAR?
-   The navigation bar (navbar) appears at the top of every page.
-   It helps users navigate between different pages of your site.
-   
-   KEY FEATURES:
-   - Sticky positioning (stays at top when scrolling)
-   - Horizontal layout (logo on left, links on right)
-   - Responsive (collapses on mobile)
+   ==========================================
 */
 
 .navbar {
-    /* BACKGROUND AND SHADOW
-       Background color and subtle shadow for depth */
+    /* BACKGROUND AND SHADOW */
     background-color: var(--background);
     box-shadow: var(--shadow-sm);
     
-    /* PADDING
-       Vertical spacing inside the navbar */
+    /* PADDING */
     padding: 1rem 0;
     
-    /* Z-INDEX
-       Controls stacking order (higher number = on top)
-       Navbar needs high z-index to stay above other content */
+    /* Z-INDEX */
     z-index: 1000;          /* Very high number to stay on top */
-    
-    /* STICKY POSITIONING
-       TODO: Make navbar stick to top when scrolling
-       HINT: Add these properties:
-       position: sticky;
-       top: 0;
-       
-       EXPLANATION:
-       - position: sticky = Element scrolls normally until it hits the "top" value
-       - top: 0 = When navbar reaches 0px from top of viewport, it sticks
-       
-       EXAMPLE: Try scrolling the page - navbar should stay at top
-    */
+
     position: sticky;
     top: 0;
+
+    /* STICKY POSITIONING
+       TODO: Make navbar stick to top when scrolling
+       Nasif Hyder-made changes to make it sticky on top
+    */
 }
 
-/* NAVBAR CONTAINER
-   Layout for navbar content (logo and links) */
+/* NAVBAR CONTAINER */
+
 .navbar .container {
-    /* FLEXBOX LAYOUT
-       Display items in a row (horizontal) */
+    /* FLEXBOX LAYOUT */
     display: flex;
     
-    /* JUSTIFY-CONTENT: space-between
-       Pushes items to opposite ends (logo left, links right) */
+    /* JUSTIFY-CONTENT: space-between) */
     justify-content: space-between;
     
-    /* ALIGN-ITEMS: center
-       Vertically centers items */
+    /* ALIGN-ITEMS: center */
     align-items: center;
 }
 
@@ -287,12 +233,14 @@ button {
 /* Make logo link not inherit color from parent */
 .logo a {
     color: var(--primary-color);
+    transition: opacity var(--transition-normal) ease, box-shadow var(--transition-normal) ease;
 }
 
 .logo a:hover {
+    opacity: 0.8;
+    box-shadow: var(--shadow-sm);
     /* TODO: Add hover effect to logo
-       HINT: You could change opacity or add a subtle color change
-       EXAMPLE: opacity: 0.8; */
+       Nasif Hyder - Added a hover effect */
 }
 
 /* NAVIGATION LINKS CONTAINER
@@ -324,14 +272,8 @@ button {
 /* LINK HOVER STATE
    What happens when you move mouse over a link */
 .nav-links a:hover {
-    color: var(--primary-color);
-    
-    /* TODO: Add more hover effects
-       HINT: You could add an underline or background
-       EXAMPLE: 
-       border-bottom: 2px solid var(--primary-color);
-       padding-bottom: 0.3rem;
-    */
+    color: var(--secondary-color);
+    opacity: 0.8;
 }
 
 /* LINK FOCUS STATE (ACCESSIBILITY)
@@ -609,18 +551,7 @@ button {
 /* ==========================================
    HERO SECTION
    ========================================== 
-   
-   WHAT IS A HERO SECTION?
-   The hero section is the first thing visitors see.
-   It should:
-   - Grab attention immediately
-   - Communicate your value proposition
-   - Include a clear call-to-action (CTA)
-   
-   DESIGN TIPS:
-   - Use contrasting colors
-   - Keep text concise and clear
-   - Make CTA buttons prominent
+
 */
 
 .hero {
@@ -758,6 +689,9 @@ button {
 .two-column {
     /* GRID LAYOUT
        Creates two equal-width columns */
+    margin-left: 9rem;
+    margin-right: 5rem;
+    align-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;  /* 1fr = one fraction of available space */
     /* EXPLANATION:
@@ -766,7 +700,7 @@ button {
        - Alternative: grid-template-columns: repeat(2, 1fr)
     */
     
-    gap: 3rem;              /* Space between columns */
+    gap: 1rem;              /* Space between columns */
 }
 
 /* INDIVIDUAL COLUMN */
@@ -2538,7 +2472,7 @@ button:focus-visible {
 }
 
 /* HIGH CONTRAST MODE SUPPORT */
-@media (prefers-contrast: high) {
+@media (prefers-contrast: more) {
     /* Increase contrast for users who need it */
     :root {
         --primary-color: #0047ab;
