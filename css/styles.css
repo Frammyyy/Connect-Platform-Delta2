@@ -573,19 +573,15 @@ button {
     
     /* TEXT ALIGNMENT */
     text-align: center;
+
+    background-image: url('../image/hero-bg.png');
+    background-size: cover;
+    background-position: center
     
     /* TODO: Add Background Image Instead of Gradient
-       HINT: You can use a background image instead of gradient
-       EXAMPLE:
-       background-image: url('../images/hero-bg.jpg');
-       background-size: cover;
-       background-position: center;
-       
-       NOTE: Make sure to keep text readable by:
-       - Using semi-transparent overlay
-       - Choosing appropriate image
-       - Adding text shadow if needed
-    */
+       Nasif Hyder - Added a picture matching with theme
+     */
+
 }
 
 /* HERO HEADLINE */
@@ -597,7 +593,8 @@ button {
     
     /* TEXT SHADOW
        Subtle shadow makes text easier to read on gradient background */
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 0 2px 4px black;
+
 }
 
 /* HERO DESCRIPTION */
@@ -605,7 +602,8 @@ button {
     font-size: 1.25rem;     /* 20px - Larger than body text */
     margin-bottom: 2rem;
     line-height: 1.6;
-    
+    color: white;
+    text-shadow: 0 2px 4px black;
     /* MAX-WIDTH
        Constrains width for better readability */
     max-width: 600px;
@@ -628,7 +626,7 @@ button {
     gap: 1rem;              /* Space between buttons */
     justify-content: center; /* Center buttons horizontally */
     flex-wrap: wrap;        /* Wrap to new line if not enough space */
-    
+    text-shadow: 0 2px 4px black;
     /* MARGIN */
     margin-top: 2rem;
 }
