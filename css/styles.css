@@ -191,7 +191,7 @@ button {
 
 .navbar {
     /* BACKGROUND AND SHADOW */
-    background-color: var(--background);
+    background-color: var(--text-dark);
     box-shadow: var(--shadow-sm);
     
     /* PADDING */
@@ -256,7 +256,7 @@ button {
 
 /* INDIVIDUAL NAVIGATION LINKS */
 .nav-links a {
-    color: var(--text-dark);
+    color: white;
     font-weight: 500;       /* Medium weight (between normal 400 and bold 700) */
     font-size: 1rem;
     
@@ -421,7 +421,7 @@ button {
 
 /* SECONDARY BUTTON (Alternative actions) */
 .btn-secondary {
-    background-color: var(--secondary-color);
+    background-color: var(--text-dark);
     color: white;
     box-shadow: var(--shadow-sm);
 }

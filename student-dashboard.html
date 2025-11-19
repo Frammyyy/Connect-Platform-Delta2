@@ -38,20 +38,19 @@
 
 <!-- DASHBOARD HEADER -->
 <section class="dashboard-header">
-    <div class="container flex-between">
+    <div class="container">
+        <div class="profile-picture">
+            <img src="image/profile-picture.jpg" alt="Profile picture">
+        </div>
 
-        <div class="flex-center" style="gap: 1rem;">
-            <div class="profile-picture">
-                <img src="image/profile-picture.jpg" alt="Profile picture">
-            </div>
-
-            <div class="welcome-section">
-                <h2>Welcome back, <span class="student-name">Student User</span></h2>
-            </div>
-
+        <div class="welcome-section">
+            <h2>Welcome back, <span class="student-name">Student User</span></h2>
         </div>
     </div>
 
+</section>
+
+<section class="container">
     <div class="two-column" style="display: flex;">
         <!-- PROFILE SUMMARY -->
         <div class="column" style="flex: 70%;">
@@ -110,125 +109,125 @@
             </div>
         </div>
     </div>
-
 </section>
 
 
-<section class="two-column">
+<section class="container">
+    <div class="two-column" style="display: flex;">
 
-    <div class="column">
-        <!-- ACTIVE PROJECT SECTION -->
-        <div class="active-projects">
-            <h3>Active Projects</h3>
+        <div class="column" style="flex: 50%;">
+            <!-- ACTIVE PROJECT SECTION -->
+            <div class="active-projects">
+                <h3>Active Projects</h3>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <h4>Frontend Dashboard Redesign</h4>
-                    <div class="company-name">Random Current Company 1</div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Frontend Dashboard Redesign</h4>
+                        <div class="company-name">Random Current Company 1</div>
+                    </div>
+
+                    <div class="progress-container">
+                        <label for="project1-progress">Progress: 60% Completed</label>
+                        <progress id="project1-progress" value="60" max="100"></progress>
+                    </div>
+
+                    <div class="project-meta">
+                        <span class="deadline">Deadline: X Days Remaining</span>
+                        <span>Status: X</span>
+                    </div>
+
+                    <button class="view-details-button">View Details</button>
                 </div>
 
-                <div class="progress-container">
-                    <label for="project1-progress">Progress: 60% Completed</label>
-                    <progress id="project1-progress" value="60" max="100"></progress>
-                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Mobile App Backend Integration</h4>
+                        <div class="company-name">Random Current Company 2</div>
+                    </div>
 
-                <div class="project-meta">
-                    <span class="deadline">Deadline: X Days Remaining</span>
-                    <span>Status: X</span>
-                </div>
+                    <div class="progress-container">
+                        <label for="project2-progress">Progress: 40% Completed</label>
+                        <progress id="project2-progress" value="40" max="100"></progress>
+                    </div>
 
-                <button class="view-details-button">View Details</button>
+                    <div class="project-meta">
+                        <span class="deadline">Deadline: X Days Remaining</span>
+                        <span>Status: X</span>
+                    </div>
+
+                    <button class="view-details-button">View Details</button>
+                </div>
             </div>
+        </div>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <h4>Mobile App Backend Integration</h4>
-                    <div class="company-name">Random Current Company 2</div>
+        <div class="column" style="flex: 50%;">
+            <!-- AVAILABLE OPPORTUNITIES SECTION -->
+            <div class="available-opportunities">
+                <h3>Available Opportunities</h3>
+
+                <div class="opportunities-grid">
+
+                    <div class="opportunity-card">
+
+                        <div class="company-logo-small">
+                            <img src="image/company-picture.jpg">
+                        </div>
+                        <h4>Frontend Development Internship</h4>
+                        <div class="company">Random Company 3</div>
+                        <p>
+                            Join our team to build and maintain user interfaces for our flagship SaaS product. Focus on
+                            responsive design and performance optimization.
+                        </p>
+
+                        <div class="skills-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+
+                        <div class="opportunity-meta">
+                            <span class="duration">Duration: 6 Months</span>
+                            <span class="compensation">$25/hour</span>
+                        </div>
+
+                        <button class="apply-now-button">Apply Now</button>
+
+                    </div>
+
+
+                    <div class="opportunity-card">
+
+                        <div class="company-logo-small">
+                            <img src="image/company-picture.jpg">
+                        </div>
+                        <h4>Frontend Development Internship</h4>
+                        <div class="company">Random Company 4</div>
+                        <p>
+                            Join our team to build and maintain user interfaces for our flagship SaaS product. Focus on
+                            responsive design and performance optimization.
+                        </p>
+
+                        <div class="skills-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+
+                        <div class="opportunity-meta">
+                            <span class="duration">Duration: 6 Months</span>
+                            <span class="compensation">$25/hour</span>
+                        </div>
+
+                        <button class="apply-now-button">Apply Now</button>
+
+                    </div>
+
                 </div>
-
-                <div class="progress-container">
-                    <label for="project2-progress">Progress: 40% Completed</label>
-                    <progress id="project2-progress" value="40" max="100"></progress>
-                </div>
-
-                <div class="project-meta">
-                    <span class="deadline">Deadline: X Days Remaining</span>
-                    <span>Status: X</span>
-                </div>
-
-                <button class="view-details-button">View Details</button>
             </div>
         </div>
     </div>
-
-    <div class="column">
-        <!-- AVAILABLE OPPORTUNITIES SECTION -->
-        <div class="available-opportunities">
-            <h3>Available Opportunities</h3>
-
-            <div class="opportunities-grid">
-
-                <div class="opportunity-card">
-
-                    <div class="company-logo-small">
-                        <img src="image/company-picture.jpg">
-                    </div>
-                    <h4>Frontend Development Internship</h4>
-                    <div class="company">Random Company 3</div>
-                    <p>
-                        Join our team to build and maintain user interfaces for our flagship SaaS product. Focus on
-                        responsive design and performance optimization.
-                    </p>
-
-                    <div class="skills-tags">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                    </div>
-
-                    <div class="opportunity-meta">
-                        <span class="duration">Duration: 6 Months</span>
-                        <span class="compensation">$25/hour</span>
-                    </div>
-
-                    <button class="apply-now-button">Apply Now</button>
-
-                </div>
-
-
-                <div class="opportunity-card">
-
-                    <div class="company-logo-small">
-                        <img src="image/company-picture.jpg">
-                    </div>
-                    <h4>Frontend Development Internship</h4>
-                    <div class="company">Random Company 4</div>
-                    <p>
-                        Join our team to build and maintain user interfaces for our flagship SaaS product. Focus on
-                        responsive design and performance optimization.
-                    </p>
-
-                    <div class="skills-tags">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                    </div>
-
-                    <div class="opportunity-meta">
-                        <span class="duration">Duration: 6 Months</span>
-                        <span class="compensation">$25/hour</span>
-                    </div>
-
-                    <button class="apply-now-button">Apply Now</button>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
 </section>
 
 <!-- FOOTER -->
