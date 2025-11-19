@@ -938,8 +938,8 @@ button {
 /* PROFILE PICTURE PLACEHOLDER */
 .profile-pic {
     /* CIRCULAR IMAGE CONTAINER */
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     background-color: var(--primary-color);
     border-radius: var(--radius-full);
     display: inline-block;
@@ -948,7 +948,7 @@ button {
     /* FLEXBOX for centering initials if you add them */
     display: inline-flex;
     align-items: start;
-    justify-content: center;
+    justify-content: start;
     color: white;
     font-weight: 700;
     font-size: 1.5rem;
@@ -1241,7 +1241,7 @@ progress::-moz-progress-bar {
     height: 50px;
     background-color: var(--background-alt);
     border-radius: var(--radius-lg);
-    
+
     /* TODO: Add actual logo images
        HINT: Use background-image or <img> tag
     */

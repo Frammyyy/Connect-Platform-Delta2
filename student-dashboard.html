@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
@@ -15,44 +15,82 @@
 
 <body>
 
-    <!-- NAVIGATION BAR -->
-    <header class="navbar">
-        <div class="container flex-between">
+<!-- NAVIGATION BAR -->
+<header class="navbar">
+    <div class="container flex-between">
 
-            <div class="logo">
-                <a href="index.html" class="flex-center">
-                    <img src="image/logo.png" alt="TxEINTERNS Logo" style="height: 50px;">
-                </a>
-            </div>
-
-            <nav class="nav-links" aria-label="Main Navigation">
-                <a href="index.html">Home</a>
-                <a href="index.html#student-section">About</a>
-                <a href="student-dashboard.html" aria-current="page">For Students</a>
-                <a href="company-dashboard.html">For Companies</a>
-                <a href="projects.html">Projects</a>
-                <a href="index.html#login-form" class="btn-login">Login</a>
-            </nav>
+        <div class="logo">
+            <a href="index.html" class="flex-center">
+                <img src="image/logo.png" alt="TxEINTERNS Logo" style="height: 50px;">
+            </a>
         </div>
-    </header>
 
-    <!-- DASHBOARD HEADER -->
-    <section class="dashboard-header">
-        <div class="container flex-between">
+        <nav class="nav-links" aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html#student-section">About</a>
+            <a href="student-dashboard.html" aria-current="page">For Students</a>
+            <a href="company-dashboard.html">For Companies</a>
+            <a href="projects.html">Projects</a>
+            <a href="index.html#login-form" class="btn-login">Login</a>
+        </nav>
+    </div>
+</header>
 
-            <div class="flex-center" style="gap: 1rem;">
-                <div class="profile-picture">
-                    <img src="image/profile-picture.jpg" alt="Profile picture">
-                </div>
+<!-- DASHBOARD HEADER -->
+<section class="dashboard-header">
+    <div class="container flex-between">
 
-                <div class="welcome-section">
-                    <h2>Welcome back, <span class="student-name">Student User</span></h2>
-                    <p>Here’s a quick overview of your project activity:</p>
-                </div>
+        <div class="flex-center" style="gap: 1rem;">
+            <div class="profile-picture">
+                <img src="image/profile-picture.jpg" alt="Profile picture">
             </div>
 
-            <!-- QUICK STATS -->
-            <div class="quick-stats">
+            <div class="welcome-section">
+                <h2>Welcome back, <span class="student-name">Student User</span></h2>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="two-column" style="display: flex;">
+        <!-- PROFILE SUMMARY -->
+        <div class="column" style="flex: 70%;">
+            <div class="profile-summary">
+                <h3>Profile Summary</h3>
+
+                <div class="profile-info">
+                    <div class="name">STUDENT USER</div>
+                    <div class="major">Computer Science, Senior</div>
+                </div>
+
+                <div class="skills-section">
+                    <h4>Skills</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-links">
+                    <h4>Portfolio & Links</h4>
+                    <a href="https://github.com/studentusergithub" class="portfolio-link" target="_blank">GitHub
+                        Profile</a>
+                    <a href="https://linkedin.com/in/studentusergithub" class="portfolio-link"
+                       target="_blank">LinkedIn</a>
+                </div>
+
+                <button class="edit-profile-button">Edit Profile</button>
+
+            </div>
+        </div>
+
+        <!-- QUICK STATS -->
+        <div class="column" style="flex: 30%;">
+
+            <div class="quick-stats" style="display: flex; flex-direction: column;">
 
                 <div class="stat-card">
                     <span class="stat-number">X</span>
@@ -70,28 +108,143 @@
                 </div>
 
             </div>
-
         </div>
-    </section>
+    </div>
 
-    <!-- ACTIVE PROJECT SECTION -->
+</section>
 
 
+<section class="two-column">
 
-    <!-- FOOTER -->
-    <footer style="background: #111; color: white; padding: 2rem 0;">
-        <div class="container" style="text-align: center;">
+    <div class="column">
+        <!-- ACTIVE PROJECT SECTION -->
+        <div class="active-projects">
+            <h3>Active Projects</h3>
 
-            <p>&copy; 2025 Texas Engineering Interns — All Rights Reserved</p>
+            <div class="project-card">
+                <div class="project-header">
+                    <h4>Frontend Dashboard Redesign</h4>
+                    <div class="company-name">Random Current Company 1</div>
+                </div>
 
-            <div style="margin-top: 1rem;">
-                <a href="#" style="color: white; margin-right: 1rem;">Terms</a>
-                <a href="#" style="color: white; margin-right: 1rem;">Privacy</a>
-                <a href="#" style="color: white;">Contact</a>
+                <div class="progress-container">
+                    <label for="project1-progress">Progress: 60% Completed</label>
+                    <progress id="project1-progress" value="60" max="100"></progress>
+                </div>
+
+                <div class="project-meta">
+                    <span class="deadline">Deadline: X Days Remaining</span>
+                    <span>Status: X</span>
+                </div>
+
+                <button class="view-details-button">View Details</button>
             </div>
 
+            <div class="project-card">
+                <div class="project-header">
+                    <h4>Mobile App Backend Integration</h4>
+                    <div class="company-name">Random Current Company 2</div>
+                </div>
+
+                <div class="progress-container">
+                    <label for="project2-progress">Progress: 40% Completed</label>
+                    <progress id="project2-progress" value="40" max="100"></progress>
+                </div>
+
+                <div class="project-meta">
+                    <span class="deadline">Deadline: X Days Remaining</span>
+                    <span>Status: X</span>
+                </div>
+
+                <button class="view-details-button">View Details</button>
+            </div>
         </div>
-    </footer>
+    </div>
+
+    <div class="column">
+        <!-- AVAILABLE OPPORTUNITIES SECTION -->
+        <div class="available-opportunities">
+            <h3>Available Opportunities</h3>
+
+            <div class="opportunities-grid">
+
+                <div class="opportunity-card">
+
+                    <div class="company-logo-small">
+                        <img src="image/company-picture.jpg">
+                    </div>
+                    <h4>Frontend Development Internship</h4>
+                    <div class="company">Random Company 3</div>
+                    <p>
+                        Join our team to build and maintain user interfaces for our flagship SaaS product. Focus on
+                        responsive design and performance optimization.
+                    </p>
+
+                    <div class="skills-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+
+                    <div class="opportunity-meta">
+                        <span class="duration">Duration: 6 Months</span>
+                        <span class="compensation">$25/hour</span>
+                    </div>
+
+                    <button class="apply-now-button">Apply Now</button>
+
+                </div>
+
+
+                <div class="opportunity-card">
+
+                    <div class="company-logo-small">
+                        <img src="image/company-picture.jpg">
+                    </div>
+                    <h4>Frontend Development Internship</h4>
+                    <div class="company">Random Company 4</div>
+                    <p>
+                        Join our team to build and maintain user interfaces for our flagship SaaS product. Focus on
+                        responsive design and performance optimization.
+                    </p>
+
+                    <div class="skills-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+
+                    <div class="opportunity-meta">
+                        <span class="duration">Duration: 6 Months</span>
+                        <span class="compensation">$25/hour</span>
+                    </div>
+
+                    <button class="apply-now-button">Apply Now</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #111; color: white; padding: 2rem 0;">
+    <div class="container" style="text-align: center;">
+
+        <p>&copy; 2025 Texas Engineering Interns — All Rights Reserved</p>
+
+        <div style="margin-top: 1rem;">
+            <a href="#" style="color: white; margin-right: 1rem;">Terms</a>
+            <a href="#" style="color: white; margin-right: 1rem;">Privacy</a>
+            <a href="#" style="color: white;">Contact</a>
+        </div>
+
+    </div>
+</footer>
 
 </body>
 </html>
