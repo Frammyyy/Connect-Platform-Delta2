@@ -36,6 +36,7 @@ Brief description of the Connect platform and what this project implements. (Ref
 ### Nasif Hyder
 * Created the repository structure and initial GitHub processes and header of index/landing page (Milestone 1).
 * Created Navigation and footer for every page (Milestone 1).
+* Made the whole index.html and necessary patches on styles.css for it (Milestone 1).
 * [List other specific contributions for Milestone 2, e.g., Implemented student dashboard HTML layout]
 * [List other specific contributions for Milestone 3, e.g., Styled the projects listing page with CSS Grid]
 

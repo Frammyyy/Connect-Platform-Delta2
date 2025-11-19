@@ -920,6 +920,7 @@ button {
 /* WELCOME SECTION */
 .welcome-section {
     margin-bottom: 1.5rem;
+    align-content: center;
 }
 
 .welcome-section h2 {
@@ -946,7 +947,7 @@ button {
     
     /* FLEXBOX for centering initials if you add them */
     display: inline-flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     color: white;
     font-weight: 700;
