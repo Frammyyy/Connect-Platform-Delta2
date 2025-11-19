@@ -1068,7 +1068,7 @@ button {
     border-radius: var(--radius-lg);
     padding: 1.5rem;
     margin-bottom: 1rem;
-    background-color: var(--background);
+    background-color: var(--background-alt);
     
     /* TRANSITION for hover effect */
     transition: transform var(--transition-normal) ease,
@@ -1105,7 +1105,7 @@ button {
 
 /* COMPANY NAME */
 .company-name {
-    color: var(--text-light);
+    color: var(--text-dark);
     font-size: 0.9rem;
     font-weight: 500;
 }
@@ -1119,7 +1119,7 @@ button {
     display: block;
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
-    color: var(--text-light);
+    color: var(--text-dark);
     font-weight: 500;
 }
 
@@ -1139,7 +1139,7 @@ progress {
 
 /* PROGRESS BAR BACKGROUND (Chrome/Safari) */
 progress::-webkit-progress-bar {
-    background-color: var(--background-alt);
+    background-color: var(--background);
     border-radius: var(--radius-full);
 }
 
@@ -1168,7 +1168,7 @@ progress::-moz-progress-bar {
 .project-meta {
     margin: 1rem 0;
     font-size: 0.9rem;
-    color: var(--text-light);
+    color: var(--text-dark);
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -1217,7 +1217,7 @@ progress::-moz-progress-bar {
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
     padding: 1.5rem;
-    background-color: var(--background);
+    background-color: var(--background-alt);
     
     /* TRANSITION for hover effect */
     transition: transform var(--transition-normal) ease,
