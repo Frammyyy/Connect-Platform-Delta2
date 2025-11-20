@@ -15,42 +15,161 @@
 
 <body>
 
-    <!-- NAVIGATION BAR -->
-    <header class="navbar">
-        <div class="container flex-between">
+<!-- NAVIGATION BAR -->
+<header class="navbar">
+    <div class="container flex-between">
 
-            <div class="logo">
-                <a href="index.html" class="flex-center">
-                    <img src="image/logo.png" alt="TxEINTERNS Logo" style="height: 50px;">
-                </a>
-            </div>
-
-            <nav class="nav-links" aria-label="Main Navigation">
-                <a href="index.html">Home</a>
-                <a href="index.html#student-section">About</a>
-                <a href="student-dashboard.html">For Students</a>
-                <a href="company-dashboard.html" aria-current="page">For Companies</a>
-                <a href="projects.html">Projects</a>
-                <a href="index.html#login-form" class="btn-login">Login</a>
-            </nav>
+        <div class="logo">
+            <a href="index.html" class="flex-center">
+                <img src="image/logo.png" alt="TxEINTERNS Logo" style="height: 50px;">
+            </a>
         </div>
-    </header>
 
+        <nav class="nav-links" aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html#student-section">About</a>
+            <a href="student-dashboard.html">For Students</a>
+            <a href="company-dashboard.html" aria-current="page">For Companies</a>
+            <a href="projects.html">Projects</a>
+            <a href="index.html#login-form" class="btn-login">Login</a>
+        </nav>
+    </div>
+</header>
 
-    <!-- FOOTER -->
-    <footer style="background: #111; color: white; padding: 2rem 0;">
-        <div class="container" style="text-align: center;">
+<!-- DASHBOARD HEADER -->
+<section class="dashboard-header">
+    <div class="container">
+        <div class="container flex-center" style="align-content: center; gap: 40px;">
+            <a class="profile-picture" style="width:100px;height:100px;">
+                <img src="image/company-picture.jpg" alt="company picture">
+            </a>
 
-            <p>&copy; 2025 Texas Engineering Interns — All Rights Reserved</p>
-
-            <div style="margin-top: 1rem;">
-                <a href="#" style="color: white; margin-right: 1rem;">Terms</a>
-                <a href="#" style="color: white; margin-right: 1rem;">Privacy</a>
-                <a href="#" style="color: white;">Contact</a>
-            </div>
-
+            <a class="welcome-section" style="align-content: center; padding-top: 20px;">
+                <h2>Welcome back, <span class="student-name">Company User</span></h2>
+            </a>
         </div>
-    </footer>
+    </div>
+</section>
+
+<!-- NEW PROJECT -->
+<section class="container">
+
+    <div class="two-column" style="display: flex">
+        <div class="column" style="flex: 70%;">
+            <div class="post-project-section">
+                <h3>Post New Project</h3>
+
+                <form class="project-form" onsubmit="return false;">
+                    <div class="form-group">
+                        <label for="project-title">Project Title <span class="required">*</span></label>
+                        <input type="text" id="project-title" name="project-title"
+                               placeholder="e.g., Build a responsive portfolio website" required>
+                        <p class="form-error">Please enter a descriptive title.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-description">Description <span class="required">*</span></label>
+                        <textarea id="project-description" name="project-description"
+                                  placeholder="Provide a detailed description of the project, goals, and deliverables."
+                                  required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Skills Required</label>
+                        <div class="skills-checkboxes">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="skills" value="html-css"> HTML/CSS
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="skills" value="javascript"> JavaScript
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="skills" value="react"> React
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="skills" value="nodejs"> Node.js
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="project-duration">Duration <span class="required">*</span></label>
+                            <select id="project-duration" name="project-duration" required>
+                                <option value="" disabled selected>Select Duration</option>
+                                <option value="8">8 weeks</option>
+                                <option value="12">12 weeks</option>
+                                <option value="16">16 weeks</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project-compensation">Compensation ($) <span class="required">*</span></label>
+                            <input type="number" id="project-compensation" name="project-compensation" min="0"
+                                   placeholder="e.g., 500" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" style="
+                background-color: var(--primary-color, #2563eb);
+                color: white;
+                padding: 0.75rem 1.5rem;
+                border: none;
+                border-radius: var(--radius-md, 6px);
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color var(--transition-normal, 0.3s);
+            ">Post Project
+                        </button>
+                    </div>
+
+                    <p class="form-success" style="display: none;">Project posted successfully!</p>
+                </form>
+            </div>
+        </div>
+
+        <div class="column" style="flex: 30%;">
+            <!-- QUICK STATS -->
+            <div class="column" style="flex: 30%;">
+
+                <div class="quick-stats" style="display: flex; flex-direction: column;">
+
+                    <div class="stat-card">
+                        <span class="stat-number">X</span>
+                        <span class="stat-label">Project Posted</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-number">X</span>
+                        <span class="stat-label">Active Project</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-number">X</span>
+                        <span class="stat-label">Applications Received</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #111; color: white; padding: 2rem 0;">
+    <div class="container" style="text-align: center;">
+
+        <p>&copy; 2025 Texas Engineering Interns — All Rights Reserved</p>
+
+        <div style="margin-top: 1rem;">
+            <a href="#" style="color: white; margin-right: 1rem;">Terms</a>
+            <a href="#" style="color: white; margin-right: 1rem;">Privacy</a>
+            <a href="#" style="color: white;">Contact</a>
+        </div>
+
+    </div>
+</footer>
 
 </body>
 </html>

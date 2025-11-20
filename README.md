@@ -37,7 +37,7 @@ Brief description of the Connect platform and what this project implements. (Ref
 * Created the repository structure and initial GitHub processes and header of index/landing page (Milestone 1).
 * Created Navigation and footer for every page (Milestone 1).
 * Made the whole index.html and necessary patches on styles.css for it (Milestone 1).
-* [List other specific contributions for Milestone 2, e.g., Implemented student dashboard HTML layout]
+* Made necessary patches on styles.css for and whole student-dashboard.html (Milestone 2).
 * [List other specific contributions for Milestone 3, e.g., Styled the projects listing page with CSS Grid]
 
 ### Paulina Marquez
