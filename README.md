@@ -12,15 +12,15 @@
 
 ## Project Description
 Brief description of the Connect platform and what this project implements. (Refer to BMC document)
-*(Example: The Connect Platform is a web-based portal designed to link engineering students with real-world industry projects posted by companies, facilitating experiential learning and talent recruitment.)*
+Texas Engineering Interns is designed to connect engineering students with the best internship
 
 ---
 
 ## Pages Implemented
 1. **Landing Page** (`index.html`) - Introduction and sign-up interface.
-2. **Student Dashboard** (`student-dashboard.html`) - Personalized page for students.
+2. **Student Dashboard** (`student-dashboard.html`) - Personalized page for student profiles.
 3. **Company Dashboard** (`company-dashboard.html`) - Interface for companies to manage projects.
-4. **Project Listings** (`projects.html`) - A directory of available projects.
+4. **Project Listings** (`projects.html`) - A directory of available projects from various companies.
 
 ---
 
