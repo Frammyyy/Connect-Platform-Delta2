@@ -6,51 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TxEINTERNS | Company Dashboard</title>
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="image/logo30x30.png">
-
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+<header class="navbar">
+    <div class="container flex-between">
+        <div class="logo">
+            <a href="index.html"  class="flex-center">
+                <img src="image/logo.png" alt="TxEINTERNS Logo" style="height: 50px;">
+            </a>
+        </div>
 
-    <!-- NAVIGATION BAR -->
-    <header class="navbar">
-        <div class="container flex-between">
+        <nav class="nav-links" aria-label="Main Navigation">
+            <a href="index.html" >Home</a>
+            <a href="index.html#student-section" >About</a>
+            <a href="student-dashboard.html" >For Students</a>
+            <a href="company-dashboard.html" >For Companies</a>
+            <a href="projects.html" aria-current="page" >Projects</a>
+            <a href="index.html#login-form" class="btn-login" >Login</a>
+        </nav>
+    </div>
+</header>
 
-            <div class="logo">
-                <a href="index.html" class="flex-center">
-                    <img src="image/logo.png" alt="TxEINTERNS Logo" style="height: 50px;">
+<section class="container">
+    <section class="page-header">
+        <header>
+            <h2>Browse Projects</h2>
+        </header>
+        <p class="page-description">Find exciting new collaborations, from short-term gigs to long-term partnerships, across various industries and skill sets.</p>
+        <p class="project-count">Showing 42 available projects</p>
+    </section>
+
+    <section class="two-column" style="display: flex;">
+        <div class="column" style="flex: 30%;">
+            <aside class="filters-sidebar">
+                <h3>🔍 Filter Projects</h3>
+
+                <div class="filter-group">
+                    <h4>Project Keyword Search</h4>
+                    <input type="search" placeholder="Search by title or keyword..." aria-label="Project keyword search">
+                </div>
+
+                <div class="filter-group">
+                    <h4>Skills Required</h4>
+                    <div>
+                        <label><input type="checkbox" name="skill" value="html"> HTML</label><br>
+                        <label><input type="checkbox" name="skill" value="css"> CSS</label><br>
+                        <label><input type="checkbox" name="skill" value="javascript" checked> JavaScript</label><br>
+                        <label><input type="checkbox" name="skill" value="python"> Python</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Project Duration</h4>
+                    <div>
+                        <label><input type="radio" name="duration" value="8"> 8 Weeks</label><br>
+                        <label><input type="radio" name="duration" value="12" checked> 12 Weeks</label><br>
+                        <label><input type="radio" name="duration" value="16"> 16 Weeks</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Compensation Range (USD)</h4>
+                    <div class="compensation-inputs">
+                        <input type="number" placeholder="Min" aria-label="Minimum compensation">
+                        <span class="range-separator">—</span>
+                        <input type="number" placeholder="Max" aria-label="Maximum compensation">
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-apply-filters">Apply Filters</button>
+                <button type="button" class="btn btn-ghost btn-clear-filters">Clear All Filters</button>
+            </aside>
+        </div>
+
+        <div class="column" style="flex: 70%;">
+            <div class="projects-listings">
+                <a href="#"  class="project-listing-card">
+                    <div class="card-header">
+                        <div class="company-logo-placeholder"></div>
+                        <div>
+                            <h3>Develop a Responsive Dashboard Interface</h3>
+                            <p class="company-name">Tech Innovators LLC</p>
+                        </div>
+                    </div>
+                    <p class="card-description">We need an expert frontend developer to build a modern, responsive dashboard using React and charting libraries. Focus on performance and UX.</p>
+                    <div class="skills-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">CSS Grid</span>
+                        <span class="skill-tag">API Integration</span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="duration">Duration: 12 Weeks</span>
+                        <span class="compensation">$5,000 - $7,000</span>
+                    </div>
+                    <button type="button" class="btn btn-secondary">View Details</button>
+                </a>
+
+                <a href="#"  class="project-listing-card">
+                    <div class="card-header">
+                        <div class="company-logo-placeholder"></div>
+                        <div>
+                            <h3>Marketing Campaign Analytics Tool</h3>
+                            <p class="company-name">DataMetrics Group</p>
+                        </div>
+                    </div>
+                    <p class="card-description">Seeking a backend specialist to optimize our PostgreSQL database and build a Python script for data processing and report generation.</p>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Data Analysis</span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="duration">Duration: 8 Weeks</span>
+                        <span class="compensation">$3,500 Fixed</span>
+                    </div>
+                    <button type="button" class="btn btn-secondary">View Details</button>
                 </a>
             </div>
-
-            <nav class="nav-links" aria-label="Main Navigation">
-                <a href="index.html">Home</a>
-                <a href="index.html#student-section">About</a>
-                <a href="student-dashboard.html">For Students</a>
-                <a href="company-dashboard.html">For Companies</a>
-                <a href="projects.html" aria-current="page">Projects</a>
-                <a href="index.html#login-form" class="btn-login">Login</a>
-            </nav>
         </div>
-    </header>
+    </section>
 
+    <div class="pagination">
+        <button type="button" class="pagination-btn" disabled aria-label="Previous Page">&lt; Previous</button>
 
-    <!-- FOOTER -->
-    <footer style="background: #111; color: white; padding: 2rem 0;">
-        <div class="container" style="text-align: center;">
-
-            <p>&copy; 2025 Texas Engineering Interns — All Rights Reserved</p>
-
-            <div style="margin-top: 1rem;">
-                <a href="#" style="color: white; margin-right: 1rem;">Terms</a>
-                <a href="#" style="color: white; margin-right: 1rem;">Privacy</a>
-                <a href="#" style="color: white;">Contact</a>
-            </div>
-
+        <div class="page-numbers">
+            <button type="button" class="page-number active" aria-current="page">1</button>
+            <button type="button" class="page-number">2</button>
+            <button type="button" class="page-number">3</button>
+            <span class="page-ellipsis">...</span>
+            <button type="button" class="page-number">10</button>
         </div>
-    </footer>
+
+        <button type="button" class="pagination-btn" aria-label="Next Page">Next &gt;</button>
+    </div>
+</section>
+
+<footer style="background: #111; color: white; padding: 2rem 0;">
+    <div class="container" style="text-align: center;">
+        <p>&copy; 2025 Texas Engineering Interns — All Rights Reserved</p>
+        <div style="margin-top: 1rem;">
+            <a href="#"  style="color: white; margin-right: 1rem;">Terms</a>
+            <a href="#"  style="color: white; margin-right: 1rem;">Privacy</a>
+            <a href="#"  style="color: white;">Contact</a>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

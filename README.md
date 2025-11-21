@@ -5,7 +5,7 @@
 * **Nasif Hyder** - Frammyyy
 * **Paulina Marquez** - PaulinaM05
 * **Michael Juengling** - XXLCharmander
-* **Kat Frederick** - [Your GitHub Username]
+* **Kat Frederick** - katfred24
 * **William Holden** - wsalazar657-boop
 
 ---
@@ -37,8 +37,8 @@ Brief description of the Connect platform and what this project implements. (Ref
 * Created the repository structure and initial GitHub processes and header of index/landing page (Milestone 1).
 * Created Navigation and footer for every page (Milestone 1).
 * Made the whole index.html and necessary patches on styles.css for it (Milestone 1).
-* Made necessary patches on styles.css for and whole student-dashboard.html (Milestone 2).
-* [List other specific contributions for Milestone 3, e.g., Styled the projects listing page with CSS Grid]
+* Made necessary patches on styles.css for and whole student-dashboard.html and company-dashboard.html (Milestone 2).
+* Made necessary patches on styles.css for and projects.html (Milestone 3).
 
 ### Paulina Marquez
 * [List specific contributions for Milestone 1, e.g., Drafted initial CSS plan and color palette]

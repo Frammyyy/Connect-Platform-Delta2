@@ -41,7 +41,7 @@
     --border-color: #D8C7B8;         /* Light beige-brown */
     
     /* STATUS COLORS - For feedback and states */
-    --success-color: #10b981;      /* Green - Success messages, completed items */
+    --success-color: #006400;      /* Green - Success messages, completed items */
     --error-color: #ef4444;        /* Red - Error messages, warnings */
     --warning-color: #f59e0b;      /* Orange - Warning states */
     --info-color: #3b82f6;         /* Blue - Information messages */
@@ -1857,7 +1857,7 @@ select.success {
     padding: 2rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
-    
+
     /* STICKY POSITIONING
        Sidebar stays visible while scrolling */
     position: sticky;
@@ -1932,6 +1932,7 @@ select.success {
     width: 100%;
     text-align: center;
     margin-top: 0.5rem;
+    background-color: var(--secondary-color);
 }
 
 /* ==========================================
@@ -1946,16 +1947,16 @@ select.success {
 
 /* PROJECT LISTING CARD */
 .project-listing-card {
-    background-color: var(--background);
+    background-color: var(--background-alt);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
     padding: 1.5rem;
-    
+
     /* FLEXBOX for vertical layout */
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    
+
     /* TRANSITION for hover */
     transition: transform var(--transition-normal) ease,
                 box-shadow var(--transition-normal) ease,
@@ -2007,12 +2008,12 @@ select.success {
 
 /* ==========================================
    PAGINATION
-   ========================================== 
-   
+   ==========================================
+
    WHAT IS PAGINATION?
    Pagination splits content across multiple pages
    Users can navigate between pages
-   
+
    NOTE: In this project, pagination is visual only (doesn't work)
    In real application, you'd need JavaScript or backend
 */
@@ -2064,12 +2065,12 @@ select.success {
     border-radius: var(--radius-md);
     font-weight: 500;
     cursor: pointer;
-    
+
     /* CENTER NUMBER */
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     transition: all var(--transition-normal) ease;
 }
 
