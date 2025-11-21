@@ -12,7 +12,7 @@
 
 ## Project Description
 Brief description of the Connect platform and what this project implements. (Refer to BMC document)
-Texas Engineering Interns is designed to connect engineering students with the best internship
+Texas Engineering Interns is a platform designed to bring transparency and simplicity to the process of students finding an engineering internship. 
 
 ---
 
@@ -51,9 +51,10 @@ Texas Engineering Interns is designed to connect engineering students with the b
 * [List other specific contributions for Milestone 3, e.g., Debugged repository merge conflicts]
 
 ### Kat Frederick
-* [List specific contributions for Milestone 1, e.g., Set up initial project directory and file structure]
-* [List specific contributions for Milestone 2, e.g., Coded the navigation bar across all pages]
-* [List other specific contributions for Milestone 3, e.g., Wrote content for the Landing Page]
+* Talked about key design elements and page set up.
+* Put together powerpoint presentation and basic script for elevator pitch.
+* Implimented quality control and final review.
+
 
 ### William Holden
 * [List specific contributions for Milestone 1, e.g., Researched best practices for responsive web design]
