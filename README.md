@@ -4,7 +4,7 @@
 
 * **Nasif Hyder** - Frammyyy
 * **Paulina Marquez** - PaulinaM05
-* **Michael Juengling** - XXLCharmander
+* **Michael Juengling** - XXLDragonite
 * **Kat Frederick** - katfred24
 * **William Holden** - wsalazar657-boop
 
