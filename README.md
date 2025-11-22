@@ -41,9 +41,9 @@ Texas Engineering Interns is a platform designed to bring transparency and simpl
 * Made necessary patches on styles.css for and projects.html (Milestone 3).
 
 ### Paulina Marquez
-* [List specific contributions for Milestone 1, e.g., Drafted initial CSS plan and color palette]
-* [List specific contributions for Milestone 2, e.g., Developed company dashboard HTML]
-* [List other specific contributions for Milestone 3, e.g., Ensured all pages were responsive using media queries]
+* Edited the presentation video for Project 2 (Final submission)
+* Talked about the specifics on the website that involve the pain key points (Final submission)
+* Implemented final touches
 
 ### Michael Juengling
 * [List specific contributions for Milestone 1, e.g., Created initial wireframes for all pages]
